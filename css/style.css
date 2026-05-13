@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f2f5;
+  padding: 20px;
+}
+
+.wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 22px;
+  color: #333;
+}
+
+.balance-box {
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 16px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+}
+
+.balance-box p {
+  font-size: 12px;
+  color: #999;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.balance-box h1 {
+  font-size: 40px;
+  color: #2d87f0;
+  margin-top: 6px;
+}
+
+.form-box {
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 16px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+}
+
+.form-box h3 {
+  margin-bottom: 14px;
+  font-size: 16px;
+  color: #333;
+}
+
+.form-box label {
+  display: block;
+  font-size: 13px;
+  color: #555;
+  margin-bottom: 4px;
+}
+
+.form-box input,
+.form-box select {
+  width: 100%;
+  padding: 9px 12px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+  margin-bottom: 12px;
+  outline: none;
+}
+
+.form-box input:focus,
+.form-box select:focus {
+  border-color: #2d87f0;
+}
+
+.form-box button {
+  width: 100%;
+  padding: 11px;
+  background-color: #2d87f0;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.form-box button:hover {
+  background-color: #1a6fd4;
+}
+
+.bottom-section {
+  display: flex;
+  gap: 16px;
+}
+
+.transaction-box,
+.chart-box {
+  flex: 1;
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+  min-height: 280px;
+}
+
+.transaction-box h3,
+.chart-box h3 {
+  font-size: 15px;
+  margin-bottom: 14px;
+  color: #333;
+}
+
+.transaction-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.transaction-item .info .name {
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+}
+
+.transaction-item .info .amount {
+  font-size: 13px;
+  color: #2d87f0;
+}
+
+.transaction-item .info .category {
+  display: inline-block;
+  font-size: 11px;
+  background: #f0f2f5;
+  color: #666;
+  padding: 2px 8px;
+  border-radius: 10px;
+  margin-top: 3px;
+}
+
+.transaction-item button {
+  background: #e74c3c;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.transaction-item button:hover {
+  background: #c0392b;
+}
+
+@media (max-width: 600px) {
+  .bottom-section {
+    flex-direction: column;
+  }
+}

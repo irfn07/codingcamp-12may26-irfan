@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Expense Tracker</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+  <div class="wrapper">
+    <h2>Expense & Budget Visualizer</h2>
+
+    <div class="balance-box">
+      <p>Total Balance</p>
+      <h1 id="totalBalance">$0.00</h1>
+    </div>
+
+    <div class="form-box">
+      <h3>Add Transaction</h3>
+      <label>Item Name</label>
+      <input type="text" id="itemName" placeholder="e.g. Lunch" />
+
+      <label>Amount</label>
+      <input type="number" id="itemAmount" placeholder="e.g. 15000" />
+
+      <label>Category</label>
+      <select id="itemCategory">
+        <option value="Food">Food</option>
+        <option value="Transport">Transport</option>
+        <option value="Fun">Fun</option>
+      </select>
+
+      <button onclick="addTransaction()">Add Transaction</button>
+    </div>
+
+    <div class="bottom-section">
+      <div class="transaction-box">
+        <h3>Transactions</h3>
+        <div id="transactionList"></div>
+      </div>
+
+      <div class="chart-box">
+        <h3>Spending by Category</h3>
+        <canvas id="spendingChart"></canvas>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
